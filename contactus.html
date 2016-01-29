@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="css/t4.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <p id="back-to-top">top</p>
+   <div class="fadeIn duration4s">
+    <header>
+
+        <div class="menu col col-12 col-center">
+            <ul class="menu-list ">
+                <li>
+                    <a class="hyper-link" href="index.html">"Home"
+                  <span class="box-animation">
+                      <span class="front">Home</span>
+                     <span class="back">Home</span>
+              </span>
+              <br>
+              </a>
+                </li>
+                <li>
+                    <a class="hyper-link" href="ourWork.html">"Our Work"
+                <span class="box-animation">
+                     <span class="front">Our Work</span>
+                     <span class="back">Our Work</span>
+                </span>
+              <br>
+              </a>
+                </li>
+                <li>
+                    <a class="hyper-link" href="ourEvents.html">"Our Events"
+                <span class="box-animation">
+                     <span class="front">Our Events</span>
+                     <span class="back">Our Events</span>
+                </span>
+              <br>
+              </a>
+                </li>
+                <li>
+                    <a class="hyper-link" href="aboutus.html">"About Us"
+                <span class="box-animation">
+                     <span class="front">About Us</span>
+                     <span class="back">About Us</span>
+                </span>
+              <br>
+              </a>
+                </li>
+                <li>
+                    <a class="hyper-link" href="contactus.html">"Contact Us"
+                <span class="box-animation">
+                     <span class="front">Contact Us</span>
+                     <span class="back">Contact Us</span>
+                </span>
+              <br>
+              </a>
+                </li>
+
+
+                <!--  Sub Menu comment out..Sub menu doesn't work as advertised
+            <li class="list-item-has-sub">
+                <a href="#" class="hyper-link">"About as" &nbsp;<sub>&#x25bc;</sub>
+                <span class="box-animation">
+                     <span class="front">About&nbsp;<sub>&#x25bc;</sub></span>
+                     <span class="back">About&nbsp;<sub>&#x25bc;</sub></span>
+                </span> <br>                         
+                </a>
+                <p> </p>
+                <ul class="sub-menu-list">
+                   <li><a href="#" class="hyper-link">Our Story
+                        <span class="box-animation">
+                            <span class="front">Our Story</span>
+                            <span class="back">Our Story</span>
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li><a href="#" class="hyper-link">Contact Us
+                        <span class="box-animation">
+                            <span class="front">Contact Us</span>
+                            <span class="back">Contact Us</span>
+                        </span>
+                      </a>
+                    </li>
+ 
+                </ul>
+                <p> </p>
+            </li>
+-->
+            </ul>
+        </div>
+    </header>
+
+    <div class="jumbotron contactUsPage ">
+        <h1>Martin Floral Design</h1>
+        <p>Beautiful - Thoughtful - Designs</p>
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="pageHeadline">
+                <div class="col col-8 col-center">
+                    <h1>Come Visit Our Show Room</h1>
+                </div>
+            </div>
+            <div class="col col-8 col-center subHeadlinetext">
+                <img class="responsive" src="images/map.gif" alt="Map of Martin Floral Designs">
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    
+    <div class="row">
+       <div class="col col-8 col-center">
+           <h3 data-accordion-target="target3"class="uppercase keySectionHeader">Contact Info</h3>
+           <p id="target3" class="accordion-target">10773 Glendover Lane <br>
+           San Diego, CA 92126 <br>
+           phone: (858)-375-8346</p>
+           
+        </div>       
+    </div>
+    <div class="row">
+        <div class="col col-8 col-center">
+            <form class="form">
+                <div>
+                    <h1 class="uppercase" >Contact Form:</h1>
+                    <label><span>Your name</span>
+                        <input id="name" type="text" name="name" class="inputMed" required />
+                    </label>
+                    <label><span>Email Address</span>
+                        <input id="email" type="text" name="email" class="inputMed" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+                    </label>
+                    <label><span>Message</span>
+                        <textarea id="feedback" name="feedback" class="medMessage" required></textarea>
+                        <label>
+
+                            <input type="button" value="Submit Form" class="regSubmit" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</div>
+    <script src="js/t4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $().accordion();
+            $().backtotop();
+            $('[data-tip-text]').tooltip();
+            $('#even-row > .col').evenHeight();
+        });
+    </script>
+
+</body>
+
+
+</html>

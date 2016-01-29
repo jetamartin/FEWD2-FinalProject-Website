@@ -1,0 +1,124 @@
+.sub-menu-list
+    { margin-left: 0;
+}
+
+.homePageImage {
+    background: url("../images/rose-1359723-1919x1284.jpg");
+    width: 100%;
+    height: auto;    
+}
+.aboutUsPageImage {
+    background: url("../images/another-red-flowers-2-1495428.jpg");
+    width: 100%;
+    height: auto;    
+}
+
+.contactUsPage {
+    background: url("../images/purpleflowers.jpg");
+    width: 100%;
+    height: auto;
+      
+}
+
+.ourWorkPageImage {
+    background: url("../images/papaver-1367563.jpg");
+    width: 100%;
+    height: auto;    
+}
+
+
+.jumbotron  {
+    color: white;
+    text-align: center;    
+}
+
+.jumbotron h1 {
+    font-style: italic;
+}
+
+.jumbotron p {
+    font-size: 2em;
+    font-style: italic; 
+}
+
+/* Navigation Styling*/
+.front {
+    background: maroon;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+footer { 
+    background-color: maroon;
+    min-height: 15em;
+    margin-top: 3em;
+}
+
+.pageHeadline {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: lightpink;
+    color: grey;
+}
+
+.pageReferral {
+    font-size: 1em;
+    color: lightpink;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+}
+
+.keySectionHeader {
+    background-color: lightgrey;
+    padding: 1em;
+    border-radius: 4px;
+}
+/*
+.keySections p {
+    background-color: #f2dde1;
+}
+*/
+
+.subHeadlinetext {
+    font-size: 1.5em; 
+}
+
+/*Over ride Form Class */
+.form, form.form {
+    max-width: 100%;
+    min-width: auto;
+    color: maroon;
+    margin-top: 3em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+input.inputMed:hover {
+    background-color: lightpink;
+}
+input[type="button"] {
+    margin-top: 1.5em;
+    padding: 10px;
+}
+input {
+    margin: 1em 0;
+}
+
+.sliderImages {
+    width: 100%
+    height: 800px;
+}
+
+
+
+@media screen and (max-width: 40em) {
+    /* #menu is the original menu */
+    .js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        display:block;
+    }
+}

@@ -1,0 +1,2296 @@
+/* -----------------------------
+ *    Reset  
+ * ----------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+textarea {
+  overflow: auto;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+
+/*
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+*/
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+ 
+.row, 
+.col {
+    box-sizing: border-box;
+}
+/* css3 :: for psuedo class!*/
+.row::before,
+.row::after {
+    content: " ";
+    display: table;
+}
+/* keeps rows from wrapping,
+stretches rowto accomodate number of columns */
+.row::after {
+    clear: both;
+}
+body{margin: 2.1em 3.2em 4.4em 3.2em;}
+/* content can pos absolute, effective display:block; */
+.col {
+    position: relative;
+    float: left;
+}
+
+/* targets adjacent columns*/
+.col + .col {
+    margin-left: 1.6%;
+}
+
+/*calcultate Single Col Width  scw = (100-(m*(mc-1)))/mc  */
+
+.col-1 {
+    width: 6.86666666667%;
+}
+
+.col-2 {
+    width: 15.3333333333%;
+}
+
+.col-3 {
+    width: 23.8%;
+}
+
+.col-4 {
+    width: 32.2666666667%;
+}
+
+.col-5 {
+    width: 40.7333333333%;
+}
+
+.col-6 {
+    width: 49.2%;
+}
+
+.col-7 {
+    width: 57.6666666667%;
+}
+
+.col-8 {
+    width: 66.1333333333%;
+}
+
+.col-9 {
+    width: 74.6%;
+}
+
+.col-10 {
+    width: 83.0666666667%;
+}
+
+.col-11 {
+    width: 91.5333333333%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* a centering class for divs any column width */
+.col-center {
+  margin: auto;
+  float: none;
+}
+@media only screen and (max-width: 1250px) {
+    margin-bottom:4.3em;
+}
+@media only screen and (max-width: 960px) {
+     body{margin: 1.5em 2.7em 4em 2.7em;}
+}
+@media only screen and (max-width: 768px) {
+    body{margin: 1em 2em 3em 2em;}
+}
+@media only screen and (max-width: 480px) {
+    
+    .col-1, 
+    .col-2, 
+    .col-3, 
+    .col-4, 
+    .col-5, 
+    .col-6, 
+    .col-7, 
+    .col-8, 
+    .col-9, 
+    .col-10, 
+    .col-11, 
+    .col-12 {
+        width: auto;
+        float: none;
+        margin: 0.8em 0.5em 1em 0.5em;
+        
+    }
+/* margin set to zero so divs will align left*/
+    .col + .col {
+        margin-left: 0%;
+    }
+}
+ 
+ 
+ 
+
+/* ------------------------------------
+ *     Type
+ * ------------------------------------*/
+
+/* google font imports */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.7em;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Cardo', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.3em;
+  margin-top: 1.8em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1.2em;
+  padding: 0.3em;
+}
+pre {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.7em;
+}
+
+
+/*paragraph FONT Serif, SansSerif style*/
+
+.serif {
+  font-family: "Cardo", Times, serif;
+}
+
+.sansserif {
+  font-family: "Raleway", Helvetica, sans-serif;
+}
+
+
+/*LISTS DEFAULT STYLE*/
+
+ul,
+ol {
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+/*PARAGRAPH BORDER AROUND BOX*/
+
+.dotted {
+  outline-style: dotted;
+}
+
+.dashed {
+  outline-style: dashed;
+}
+
+.solid {
+  outline-style: solid;
+}
+
+.double {
+  outline-style: double;
+}
+
+.groove {
+  outline-style: groove;
+}
+
+.ridge {
+  outline-style: ridge;
+}
+
+.inset {
+  outline-style: inset;
+}
+
+.outset {
+  outline-style: outset;
+}
+
+
+/*image border and links*/
+
+a img {
+  border: none;
+}
+
+
+/*  classes to align text with image  */
+
+img.top {
+  vertical-align: text-top;
+}
+
+img.bottom {
+  vertical-align: text-bottom;
+}
+
+
+/*default <a> tag styling for psuedo classes*/
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  background-color: transparent;
+  text-decoration: none
+}
+
+sup,
+sub {
+  line-height: 0;
+}
+
+strong {
+  font-style: normal;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic
+}
+
+cite {
+  font-style: italic
+}
+
+code {
+  font-family: monospace;
+}
+
+address {
+  text-align: justify;
+}
+
+abbr {
+  font-variant: small-caps;
+}
+
+blockquotes {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  text-align: justify;
+}
+
+.form    {
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+margin:auto;
+position:relative;
+max-width:550px;
+    min-width: 350px;
+height:auto;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #0190bf;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 2px solid #999;
+border-style: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+ /* INPUT ELEMENT AS class="inputMed"  */
+
+       
+    
+input.inputMed    {
+width:70%;
+max-width: 375px;
+display:block;
+border: 1px solid #999;
+    font-size: 115%;
+height: 27px;
+    clear: left;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input.inputMed:hover {
+background:#daf2fa;
+color:#333;
+}
+
+/*use class for TEXTAREA*/
+textarea.medMessage{
+width:70%;
+    display: block;
+height:auto; 
+    max-width: 375px;
+    height: 150px;
+     display:block;
+    font-size:110%;
+}
+     
+input.bgBluSbMt 
+    {
+width:90px;
+        border: 0px;
+position:absolute;
+right:20px;
+bottom:20px;
+background:#09C;
+color:#fff;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 74%;
+height:45px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: 0px solid #fff;
+    
+}    
+
+
+/* FORM ELEMENT AS class="form"  */
+
+
+/* FORM ELEMENT AS class="form"  */
+
+form.form    {
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+margin:auto;
+position:relative;
+max-width:550px;
+    min-width: 350px;
+height:auto;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #0190bf;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 2px solid #999;
+border-style: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+ /* INPUT ELEMENT AS class="inputMed"  */
+
+       
+    
+input.inputMed    {
+width:70%;
+max-width: 375px;
+display:block;
+border: 1px solid #999;
+    font-size: 115%;
+height: 27px;
+    clear: left;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input.inputMed:hover {
+background:#daf2fa;
+color:#333;
+}
+
+/*use class for TEXTAREA*/
+textarea.medMessage{
+width:70%;
+    display: block;
+height:auto; 
+    max-width: 375px;
+    height: 150px;
+     display:block;
+    font-size:110%;
+}
+     
+input.bgBluSbMt 
+    {
+width:90px;
+        border: 0px;
+position:absolute;
+right:20px;
+bottom:20px;
+background:#09C;
+color:#fff;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 74%;
+height:45px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: 0px solid #fff;
+    
+}
+    
+input.bgBluSbMt:focus, input:focus {
+border: 1px solid #09C;
+}
+
+input.bgBluSbMt:hover{
+    
+    background:#70d5f5;
+    color:#f8f81a;
+     border:1px solid #999;
+    
+}
+/*put on click color change*/
+input.bgBluSbMt.submit:focus{
+    
+    background:#0fb8ef;
+    color:#f8f81a;
+     border:1px solid #999;
+    
+}
+
+ /*exSmSubmit*/
+button.exSmSubmit{
+    -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+    width: 50px;
+        height:30px;
+padding:auto;
+    background-color: limegreen;
+    font-size: .6em;
+    color:cornsilk;
+}
+
+button.exSmSubmit:hover{
+    -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+padding:6px;
+    background-color: #3beb3b;
+    color:cornsilk;
+}
+
+button.exSmSubmit:focus{
+    -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+padding:6px;
+    background-color: #04a504;
+    color:rgba(250, 244, 90, 0.94);
+} 
+
+ 
+
+/*.smSubmit*/
+button.smSubmit{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+    width: 60px;
+    height: 36px;
+padding:4px;
+    background-color: limegreen;
+    font-size: .8em;
+    color:cornsilk;
+}
+
+button.smSubmit:hover{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+padding:3px;
+    background-color: #3beb3b;
+    color:cornsilk;
+}
+
+button.smSubmit:focus{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+padding:8px;
+    background-color: #04a504;
+    color:rgba(250, 244, 90, 0.94);
+} 
+
+/*.regSubmit*/
+button.regSubmit{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+    width: 80px;
+    height:50px;
+padding:5px;
+    background-color: limegreen;
+    font-size: 1.1em;
+    color:cornsilk;
+}
+
+button.regSubmit:hover{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+padding:10px;
+    background-color: #3beb3b;
+    color:cornsilk;
+}
+
+button.regSubmit:focus{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #04a504;
+    color:rgba(250, 244, 90, 0.94);
+}
+
+/*button.lrgSubmit*/
+button.lrgSubmit{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+    width: 100px;
+    height: 66px;
+border-radius: 10px;
+padding:5px;
+    background-color: limegreen;
+    font-size: 1.3em;
+    color:cornsilk;
+}
+
+button.lrgSubmit:hover{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #3beb3b;
+    color:cornsilk;
+}
+
+button.lrgSubmit:focus{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #04a504;
+    color:rgba(250, 244, 90, 0.94);
+}
+
+/*button.exSmReset*/
+button.exSmReset{
+    -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+     
+    border-radius: 6px;
+    padding:auto;
+    width: 42px;
+    height:28px;
+    background-color: #c5c9c5;
+    font-size: .8em;
+    color:dimgray;
+}
+
+button.exSmReset:hover{
+    -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+padding:6px;
+    background-color: #e2e3e2;
+}
+
+button.exSmReset:focus{
+    -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+padding:6px;
+    background-color: #8b938b;
+    color:floralwhite;
+    
+}
+
+
+/*button.smReset*/
+button.smReset{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+     
+border-radius: 8px;
+padding:auto;
+    background-color: #c5c9c5;
+    width: 54px;
+    height: 32px;
+    font-size: 1em;
+    color:dimgray;
+}
+
+button.smReset:hover{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+padding:7px;
+    background-color: #e2e3e2;
+}
+
+button.smReset:focus{
+    -webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+padding:7px;
+    background-color: #8b938b;
+    color:floralwhite;
+    
+}
+
+
+/*button.regReset*/
+button.regReset{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+     width
+border-radius: 10px;
+padding:9px;
+    background-color: #c5c9c5;
+    font-size: 1.1em;
+    color:dimgray;
+}
+
+button.regReset:hover{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #e2e3e2;
+}
+
+button.regReset:focus{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #8b938b;
+    color:floralwhite;
+    
+}
+
+/*.lrgReset*/
+
+button.lrgReset{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+    width:90px;
+    height:54px;
+border-radius: 10px;
+padding:10px;
+    background-color: #c5c9c5;
+    font-size: 1.3em;
+    
+    color:dimgray;
+}
+
+button.lrgReset:hover{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #e2e3e2;
+}
+
+button.lrgReset:focus{
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+    background-color: #8b938b;
+    color:floralwhite;
+    
+}
+
+/**/
+/**/
+
+ 
+
+
+ 
+*exSmSubmit*/ button.exSmSubmit {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  width: 48px;
+  height: 28px;
+  padding: 5px;
+  background-color: limegreen;
+  font-size: .6em;
+  color: cornsilk;
+}
+
+button.exSmSubmit:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #3beb3b;
+  color: cornsilk;
+}
+
+button.exSmSubmit:focus {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #04a504;
+  color: rgba(250, 244, 90, 0.94);
+}
+
+
+/*.smSubmit*/
+
+button.smSubmit {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 54px;
+  height: 32px;
+  padding: 7px;
+  background-color: limegreen;
+  font-size: .8em;
+  color: cornsilk;
+}
+
+button.smSubmit:hover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #3beb3b;
+  color: cornsilk;
+}
+
+button.smSubmit:focus {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #04a504;
+  color: rgba(250, 244, 90, 0.94);
+}
+
+
+/*.regSubmit*/
+
+button.regSubmit {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 68px;
+  padding: 8px;
+  background-color: limegreen;
+  font-size: 1.1em;
+  color: cornsilk;
+}
+
+button.regSubmit:hover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #3beb3b;
+  color: cornsilk;
+}
+
+button.regSubmit:focus {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #04a504;
+  color: rgba(250, 244, 90, 0.94);
+}
+
+
+/*button.lrgSubmit*/
+
+button.lrgSubmit {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width: 90px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: limegreen;
+  font-size: 1.3em;
+  color: cornsilk;
+}
+
+button.lrgSubmit:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #3beb3b;
+  color: cornsilk;
+}
+
+button.lrgSubmit:focus {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #04a504;
+  color: rgba(250, 244, 90, 0.94);
+}
+
+
+/*button.exSmReset*/
+
+button.exSmReset {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 5px;
+  width: 48px;
+  height: 28px;
+  background-color: #c5c9c5;
+  font-size: .8em;
+  color: dimgray;
+}
+
+button.exSmReset:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #e2e3e2;
+}
+
+button.exSmReset:focus {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #8b938b;
+  color: floralwhite;
+}
+
+
+/*button.smReset*/
+
+button.smReset {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 6px;
+  background-color: #c5c9c5;
+  width: 54px;
+  height: 32px;
+  font-size: 1em;
+  color: dimgray;
+}
+
+button.smReset:hover {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #e2e3e2;
+}
+
+button.smReset:focus {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 7px;
+  background-color: #8b938b;
+  color: floralwhite;
+}
+
+
+/*button.regReset*/
+
+button.regReset {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width border-radius: 10px;
+  padding: 10px;
+  background-color: #c5c9c5;
+  font-size: 1em;
+  color: dimgray;
+}
+
+button.regReset:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #e2e3e2;
+}
+
+button.regReset:focus {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #8b938b;
+  color: floralwhite;
+}
+
+
+/*.lrgReset*/
+
+button.lrgReset {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  width: 90px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #c5c9c5;
+  font-size: 1.3em;
+  color: dimgray;
+}
+
+button.lrgReset:hover {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #e2e3e2;
+}
+
+button.lrgReset:focus {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #8b938b;
+  color: floralwhite;
+}
+  input[type="checkbox"].exSmCheck,
+  input[type="checkbox"].smCheck,
+  input[type="checkbox"].regCheck,
+  input[type="checkbox"].lrgCheck {
+    display: none;
+  }
+  /*  REG CHECKBOX  */
+  
+  input.regCheck + label {
+    font-size: 1.3em;
+    padding-right: .5em;
+  }
+  
+  input.regCheck + label span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../images/check_radio_sheet.png) left top no-repeat;
+    cursor: pointer;
+  }
+  
+  input.regCheck:checked + label span {
+    background: url(../images/check_radio_sheet.png) -19px top no-repeat;
+  }
+  /*  LRG CHECKBOX  */
+  
+  input.lrgCheck + label {
+    font-size: 2em;
+    padding-right: .5em;
+  }
+  
+  input.lrgCheck + label span {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../images/check_radio_sheetLrg.png) left top no-repeat;
+    cursor: pointer;
+  }
+  
+  input.lrgCheck:checked + label span {
+    background: url(../images/check_radio_sheetLrg.png) -36px top no-repeat;
+  }
+  /*  SMALL CHECKBOX  */
+  
+  input.smCheck + label {
+    font-size: 1em;
+    padding-right: .5em;
+  }
+  
+  input.smCheck + label span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../images/check_radio_sheetSm.png) left top no-repeat;
+    cursor: pointer;
+  }
+  
+  input.smCheck:checked + label span {
+    background: url(../images/check_radio_sheetSm.png) -16px -1px no-repeat;
+  }
+  /*  EXSMALL CHECKBOX  */
+  
+  input.exSmCheck + label {
+    font-size: .8em;
+    padding-right: .5em;
+  }
+  
+  input.exSmCheck + label span {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../images/check_radio_sheetExSm.png) left -1px no-repeat;
+    cursor: pointer;
+  }
+  
+  input.exSmCheck:checked + label span {
+    background: url(../images/check_radio_sheetExSm.png) -13px top no-repeat;
+  }
+
+/*relative positioned container*/
+ul.radio-group li {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+}
+/*zeroes out the button attributes
+and positions absolutley in container
+*/
+input[type="radio"].exSmRadio,
+input[type="radio"].smRadio,
+input[type="radio"].regRadio,
+input[type="radio"].lrgRadio {
+    display:none;
+}
+
+input.regRadio {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Matches/selects the direct descendant of a label preceded by a 
+radio button.   draws the outer diameter, styles,  aligns  */
+input.regRadio + label{
+    font-size: 1.3em;
+}
+input.regRadio + label > span {
+  position: relative;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 1em 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Matches the direct descendant of a label preceded by a 
+   checked radio button
+Once checked, button changes styling
+*/
+input.regRadio:checked + label > span {
+  background: linear-gradient(#a0e5f8, #75c7dc);
+  background: -webkit-linear-gradient(#a0e5f8, #75c7dc);
+  border-color: #41a6bf;
+  box-shadow: 0px 1px 2px rgba(65, 166, 191, 0.9) inset;
+}
+
+/* Matches a span contained by the direct descendant 
+   of a label preceded by a checked radio button.  makes the most inner span be the check mark */
+input.regRadio:checked + label > span span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    border-radius: 5px;
+    border: none;
+    background: #167c95;
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.3);
+}
+
+/*LARGE RADIO BUTTONS CALLED WITH .lgRadio */
+
+ 
+input.lrgRadio + label{
+    font-size: 2em;
+}
+/* Matches/selects the direct descendant of a label preceded by a 
+radio button.   draws the outer diameter, styles,  aligns  */
+ input.lrgRadio + label > span {
+  position: relative;
+  border-radius: 21px;
+  width: 36px;
+  height: 36px;
+  background-color: #f0f0f0;
+  border: 2px solid #bcbcbc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 1em 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Matches the direct descendant of a label preceded by a 
+   checked radio button
+Once checked, button changes styling
+*/
+input.lrgRadio:checked + label > span {
+  background: linear-gradient(#a0e5f8, #75c7dc);
+  background: -webkit-linear-gradient(#a0e5f8, #75c7dc);
+  border-color: #41a6bf;
+  box-shadow: 0px 1px 2px rgba(65, 166, 191, 0.9) inset;
+}
+
+/* Matches a span contained by the direct descendant 
+   of a label preceded by a checked radio button.  makes the most inner span be the check mark */
+input.lrgRadio:checked + label > span span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #167c95;
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.3);
+}
+/* end LARGE */
+
+input.smRadio + label{
+    font-size: 1em;
+}
+/*SMALL RADIO BUTTONS CALLED WITH .smRadio */
+/* Matches/selects the direct descendant of a label preceded by a 
+radio button.   draws the outer diameter, styles,  aligns  */
+input.smRadio + label > span {
+  position: relative;
+  border-radius: 11px;
+  width: 14px;
+  height: 14px;
+  background-color: #f0f0f0;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 1em 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Matches the direct descendant of a label preceded by a 
+   checked radio button
+Once checked, button changes styling
+*/
+input.smRadio:checked + label > span {
+  background: linear-gradient(#a0e5f8, #75c7dc);
+  background: -webkit-linear-gradient(#a0e5f8, #75c7dc);
+  border-color: #41a6bf;
+  box-shadow: 0px 1px 2px rgba(65, 166, 191, 0.9) inset;
+}
+
+/* Matches a span contained by the direct descendant 
+   of a label preceded by a checked radio button.  makes the most inner span be the check mark */
+input.smRadio:checked + label > span span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 4px;
+    top: px;
+    border-radius: 12px;
+    border: none;
+    background: #167c95;
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.3);
+}
+
+/*SMALL RADIO BUTTONS end */
+
+/*EXSMALL RADIO BUTTONS WITH .exSmRadio */
+
+input.exSmRadio + label{
+    font-size: 0.8em;
+}
+/* Matches/selects the direct descendant of a label preceded by a 
+radio button.   draws the outer diameter, styles,  aligns  */
+input.exSmRadio + label > span {
+  position: relative;
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #bcbcbc;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 1em 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Matches the direct descendant of a label preceded by a 
+   checked radio button
+Once checked, button changes styling
+*/
+input.exSmRadio:checked + label > span {
+  background: linear-gradient(#a0e5f8, #75c7dc);
+  background: -webkit-linear-gradient(#a0e5f8, #75c7dc);
+  border-color: #41a6bf;
+  box-shadow: 0px 1px 2px rgba(65, 166, 191, 0.9) inset;
+}
+
+/* Matches a span contained by the direct descendant 
+   of a label preceded by a checked radio button.  makes the most inner span be the check mark */
+input.exSmRadio:checked + label > span span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border-radius: 10px;
+    border: none;
+    background: #167c95;
+    box-shadow: 0px 1px rgba(255, 255, 255, 0.3);
+}
+
+/*EXSMALL end*/
+
+input[type="radio"]:focus + label > span {
+  box-shadow: 0px 0px 6px rgba(63, 165, 190, 1);
+}
+
+ 
+ 
+
+  
+
+
+
+
+
+
+img.responsive {
+    width: 100%;
+    height: auto;
+}
+
+img.hide{display:none;}
+
+.tableGrey {
+	border: 1px solid #e3e3e3;
+	background-color: #f2f2f2;
+        width: 100%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+.tableGrey td, #table-2 th {
+	padding: 5px;
+	color: #333;
+}
+.tableGrey thead {
+	font-family: 'Cardo', serif;
+	padding: .2em 0 .2em .5em;
+	text-align: left;
+	color: #4B4B4B;
+	background-color: #C8C8C8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #999;
+}
+.tableGrey th {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: white 1px 1px 1px;
+}
+.tableGrey td {
+	line-height: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+.tableGrey td:hover {
+	background-color: #fff;
+}
+
+.tableGreyStriped {
+	border: 1px solid #e3e3e3;
+	background-color: #f2f2f2;
+        width: 100%;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+.tableGreyStriped td, .tableGreyStriped th {
+	padding: 5px;
+	color: #333;
+}
+.tableGreyStriped thead {
+	font-family: 'Cardo', serif;
+	padding: .2em 0 .2em .5em;
+	text-align: left;
+	color: #4B4B4B;
+	background-color: #C8C8C8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3));
+	background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%);
+	border-bottom: solid 1px #999;
+}
+.tableGreyStriped th {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: white 1px 1px 1px;
+}
+
+.tableGreyStriped tbody tr:nth-child(odd) {
+   background-color: #fdefef;
+}
+
+.tableGreyStriped td {
+	line-height: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+.tableGreyStriped td:hover {
+	background-color: #fff;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix {
+  clear: both;
+}
+
+left {
+  float: left;
+}
+
+right {
+  float: right;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+.no-print {
+  @media print {
+    display: none;
+  }
+}
+/*CSS for static alert boxes*/
+.alert-box {
+	color:#555;
+	border-radius:10px;
+	font-family:'Raleway',sans-serif;
+    font-size:11px;
+	padding:10px 36px;
+	margin:10px;
+}
+.alert-box span {
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.error {
+	background:#ffecec url('../images/error.png') no-repeat 10px 50%;
+	border:1px solid #f5aca6;
+}
+.success {
+	background:#e9ffd9 url('../images/success.png') no-repeat 10px 50%;
+	border:1px solid #a6ca8a;
+}
+.warning {
+	background:#fff8c4 url('../images/warning.png') no-repeat 10px 50%;
+	border:1px solid #f2c779;
+}
+.notice {
+	background:#e3f7fc url('../images/notice.png') no-repeat 10px 50%;
+	border:1px solid #8ed9f6;
+}
+
+/*moveout-right animation*/
+        .moveout-right {
+          -webkit-animation: moveright 20s 1s 1 ease-in-out forwards;
+                  animation: moveright 20s 1s 1 ease-in-out forwards;
+        }
+        @-webkit-keyframes moveright {
+            from {margin-left:0%; visibility: visible; max-height: 1000px;}
+            to {margin-left:100%; visibility: hidden; max-height: 0;}
+        }
+        @keyframes moveright {
+            from {margin-left:0%; visibility: visible; max-height: 1000px;}
+            to {margin-left:100%; visibility: hidden; max-height: 0;}
+        }
+
+/*moveout-left animation*/
+        .moveout-left {
+          -webkit-animation: moveleft 20s 1s 1 ease-in-out forwards;
+                  animation: moveleft 20s 1s 1 ease-in-out forwards;
+        }
+        @-webkit-keyframes moveleft {
+            from {margin-right:0%; visibility: visible; max-height: 1000px;}
+            to {margin-right:100%; visibility: hidden; max-height: 0;}
+        }
+        @keyframes moveleft {
+            from {margin-right:0%; visibility: visible; max-height: 1000px;}
+            to {margin-right:100%; visibility: hidden; max-height: 0;}
+        }
+
+/*fadeout-up animation*/
+        .fadeout-up{
+          -webkit-animation: fadeout 20s 1s 1 ease-in-out forwards;
+                  animation: fadeout 20s 1s 1 ease-in-out forwards;
+        }
+        @-webkit-keyframes fadeout {
+            0% {opacity:1;}
+            100% {opacity:0;
+                -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);}
+}
+        @keyframes fadeout {
+            0% {opacity:1;}
+            100% {opacity:0;
+                -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);}
+        }
+
+/*fadeout-down animation*/
+         .fadeout-down{
+          -webkit-animation: fadeoutDown 20s 1s 1 ease-in-out forwards;
+                  animation: fadeoutDown 20s 1s 1 ease-in-out forwards;
+        }
+        @-webkit-keyframes fadeoutDown {
+            0% {opacity:1;}
+            100% {opacity:0;
+                -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);}
+            }
+        @keyframes fadeoutDown {
+            0% {opacity:1;}
+            100% {opacity:0;
+                -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);}
+        }
+
+/*animation-duration classes: duration2s, duration4s, duration6s, duration8s*/
+.duration2s { 
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+ .duration4s { 
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+ .duration6s { 
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+}
+.duration8s { 
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+}
+
+/*fade-in, class: fadeIn*/
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*rotate-in, class: rotateIn*/
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/*zoom-in, class: zoomIn*/
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/*slide-in from right, class: slideInRight*/
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-animation: shadowAnimate 5s infinite; /* Chrome, Safari, Opera */
+    animation: shadowAnimate 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes shadowAnimate {
+    50% {box-shadow: 10px 20px 30px purple;}
+}
+
+/* Standard syntax */
+@keyframes shadowAnimate {
+    50% {box-shadow: 10px 20px 30px purple;}
+}
+
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #00FF99;
+    -webkit-animation: backgroundAnimate 5s infinite; /* Chrome, Safari, Opera */
+    animation: backgroundAnimate 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes backgroundAnimate {
+    50% {background-color: yellowgreen;}
+}
+
+/* Standard syntax */
+@keyframes backgroundAnimate {
+    50% {background-color: yellowgreen;}
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+  color: inherit;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+/*Classes: munu-list, allign-center, allgin-right*/
+
+.menu-list {
+  display: block;
+  background: #eee;
+}
+
+.menu-list li {
+  display: inline-block;
+}
+
+.menu-list li a {
+  color: #eee;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px;
+  font-family: Josefin Sans, sans-serif;
+}
+
+.menu-list.align-center {
+  text-align: center;
+}
+
+.menu-list.align-right {
+  text-align: right;
+}
+
+
+/*Classes: sub-munu-list, list-item-has-sub*/
+
+.sub-menu-list li {
+  display: block;
+}
+
+.sub-menu-list {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+}
+
+.list-item-has-sub:hover .sub-menu-list {
+  display: block;
+}
+
+.list-item-has-sub > a:before {
+  content: "";
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+
+
+/*Classes: hyper-link, box-animation, front, back*/
+
+.hyper-link {
+  transition: all .07s linear;
+  position: relative;
+}
+
+.box-animation {
+  transition: all .3s ease-out;
+  position: absolute;
+}
+
+.front {
+  position: absolute;
+}
+
+.back {
+  position: absolute;
+}
+
+.hyper-link:hover .box-animation {
+  transform: translateZ(-5px) rotateX(90deg);
+}
+
+.box-animation {
+  transition: all .3s ease-out;
+  position: absolute;
+  transform: translatez(-25px);
+  transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  transform: rotatex(0deg) translatez(35px);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #07a0e7;
+  padding: 15px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.back {
+  transform: rotatex(-90deg) translatez(25px);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #a9c468;
+  padding: 15px;
+  color: white;
+  box-sizing: border-box;
+}
+/* -----------------------------
+ *    Accordion plugin CSS  
+ * ----------------------------- */
+
+.accordion-target {
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: height 0.5s;
+}
+
+[data-accordion-target] {
+  cursor: pointer
+}
+
+.accordion-open:before {
+  content: '- ';
+}
+
+.accordion-closed:before {
+  content: '+ ';
+}
+/* -----------------------------
+ *    Back to Top Plugin CSS  
+ * ----------------------------- */
+
+#back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 1.4em;
+  line-height: 30px;
+  padding: 12px;
+  margin: 0 20px 10px 10px;
+  text-decoration: none;
+  background: #eee;
+  color: #338;
+  border: 0;
+  border-radius: 50% 50% 0 0;
+  opacity: 0.76;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  background: #ddf;
+  color: #000;
+}
+/* -----------------------------
+ *    ToolTip Plugin CSS
+ * ----------------------------- */
+
+[data-tip-text] {
+  border-bottom: 2px dotted #aaa;
+}
+
+#tooltip-container {
+  max-width: 200px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+}
